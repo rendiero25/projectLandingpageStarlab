@@ -1,0 +1,16 @@
+{
+  "name": "projectlandingpagestarlab",
+  "version": "1.0.0",
+  "description": "landing page for star lab",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rendiero",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.1",
+    "tailwindcss": "^4.0.1"
+  }
+}
