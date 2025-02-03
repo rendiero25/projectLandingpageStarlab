@@ -382,9 +382,6 @@
     --color-primary: #FC8474;
     --color-secondary: #E56333;
     --color-third: #001122;
-    --breakpoint-3xl: 1920px;
-    --breakpoint-4xl: 2560px;
-    --breakpoint-5xl: 3840px;
   }
 }
 @layer base {
@@ -669,15 +666,6 @@
   }
   .container {
     width: 100%;
-    @media (width >= 1920px) {
-      max-width: 1920px;
-    }
-    @media (width >= 2560px) {
-      max-width: 2560px;
-    }
-    @media (width >= 3840px) {
-      max-width: 3840px;
-    }
     @media (width >= 40rem) {
       max-width: 40rem;
     }
@@ -696,15 +684,6 @@
   }
   .container\! {
     width: 100% !important;
-    @media (width >= 1920px) {
-      max-width: 1920px !important;
-    }
-    @media (width >= 2560px) {
-      max-width: 2560px !important;
-    }
-    @media (width >= 3840px) {
-      max-width: 3840px !important;
-    }
     @media (width >= 40rem) {
       max-width: 40rem !important;
     }
@@ -1297,6 +1276,9 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -1737,14 +1719,14 @@
   .py-\[0\.4rem\] {
     padding-block: 0.4rem;
   }
-  .pt-4 {
-    padding-top: calc(var(--spacing) * 4);
-  }
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
   }
   .pt-14 {
     padding-top: calc(var(--spacing) * 14);
+  }
+  .pb-18 {
+    padding-bottom: calc(var(--spacing) * 18);
   }
   .text-center {
     text-align: center;
@@ -2377,33 +2359,6 @@
   .transform-view {
     transform-box: view-box;
   }
-  .\33 xl\:gap-12 {
-    @media (width >= 1920px) {
-      gap: calc(var(--spacing) * 12);
-    }
-  }
-  .\33 xl\:py-16 {
-    @media (width >= 1920px) {
-      padding-block: calc(var(--spacing) * 16);
-    }
-  }
-  .\33 xl\:pt-16 {
-    @media (width >= 1920px) {
-      padding-top: calc(var(--spacing) * 16);
-    }
-  }
-  .\33 xl\:text-4xl {
-    @media (width >= 1920px) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-  }
-  .\33 xl\:text-9xl {
-    @media (width >= 1920px) {
-      font-size: var(--text-9xl);
-      line-height: var(--tw-leading, var(--text-9xl--line-height));
-    }
-  }
   .sm\:-mt-\[9rem\] {
     @media (width >= 40rem) {
       margin-top: calc(9rem * -1);
@@ -2570,11 +2525,6 @@
       gap: 1.8rem;
     }
   }
-  .\32 xl\:self-start {
-    @media (width >= 96rem) {
-      align-self: flex-start;
-    }
-  }
   .\32 xl\:p-14 {
     @media (width >= 96rem) {
       padding: calc(var(--spacing) * 14);
@@ -2595,34 +2545,9 @@
       padding-inline: 2rem;
     }
   }
-  .\32 xl\:py-6 {
-    @media (width >= 96rem) {
-      padding-block: calc(var(--spacing) * 6);
-    }
-  }
-  .\32 xl\:py-8 {
-    @media (width >= 96rem) {
-      padding-block: calc(var(--spacing) * 8);
-    }
-  }
   .\32 xl\:py-16 {
     @media (width >= 96rem) {
       padding-block: calc(var(--spacing) * 16);
-    }
-  }
-  .\32 xl\:py-20 {
-    @media (width >= 96rem) {
-      padding-block: calc(var(--spacing) * 20);
-    }
-  }
-  .\32 xl\:py-32 {
-    @media (width >= 96rem) {
-      padding-block: calc(var(--spacing) * 32);
-    }
-  }
-  .\32 xl\:py-64 {
-    @media (width >= 96rem) {
-      padding-block: calc(var(--spacing) * 64);
     }
   }
   .\32 xl\:py-\[0\.5rem\] {
@@ -2635,19 +2560,9 @@
       padding-block: 1.3rem;
     }
   }
-  .\32 xl\:pt-2 {
-    @media (width >= 96rem) {
-      padding-top: calc(var(--spacing) * 2);
-    }
-  }
   .\32 xl\:pt-4 {
     @media (width >= 96rem) {
       padding-top: calc(var(--spacing) * 4);
-    }
-  }
-  .\32 xl\:pt-6 {
-    @media (width >= 96rem) {
-      padding-top: calc(var(--spacing) * 6);
     }
   }
   .\32 xl\:pt-8 {
@@ -2663,11 +2578,6 @@
   .\32 xl\:pt-12 {
     @media (width >= 96rem) {
       padding-top: calc(var(--spacing) * 12);
-    }
-  }
-  .\32 xl\:pt-16 {
-    @media (width >= 96rem) {
-      padding-top: calc(var(--spacing) * 16);
     }
   }
   .\32 xl\:pt-18 {
@@ -2698,11 +2608,6 @@
   .\32 xl\:pr-\[55rem\] {
     @media (width >= 96rem) {
       padding-right: 55rem;
-    }
-  }
-  .\32 xl\:pb-16 {
-    @media (width >= 96rem) {
-      padding-bottom: calc(var(--spacing) * 16);
     }
   }
   .\32 xl\:pb-32 {
